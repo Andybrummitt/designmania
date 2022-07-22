@@ -1,0 +1,85 @@
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.2rem;
+    width: 100%;
+    z-index: 1;
+    background: white;
+}
+
+.mobileNavigation {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobileNavigation .navLinks {
+    text-align: center;
+    width: 100%;
+}
+
+.navLinks li {
+    list-style-type: none;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.hbIcon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navLinks li a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.navLinksContainer {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    left: 0;
+    background: white;
+    z-index: 1;
+}
+
+.navigation {
+    display: none;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 768px){
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .mobileNavigation {
+        display: none;
+    }
+
+    .navLinksContainer {
+        position: static;
+        height: auto;
+        width: auto;
+        z-index: auto;
+    }
+    .navLinksContainer .navLinks {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .navLinks li {
+        padding: 0 1rem;
+    }
+}

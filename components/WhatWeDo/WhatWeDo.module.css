@@ -1,0 +1,42 @@
+.container {
+    background: grey;
+    padding: 1rem;
+    line-height: 1.2rem;
+}
+
+.container div {
+    font-size: 0.8rem;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 1.2rem auto;
+}
+
+.container h2 {
+    margin: 1rem;
+}
+
+.container article {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container p {
+    margin: 1rem 0;
+}
+
+.linkButton {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background: black;
+    border: none;
+}
+
+.linkButton a {
+    text-decoration: none;
+    color: white;
+}

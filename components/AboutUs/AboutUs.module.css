@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    padding: 1rem;
+    line-height: 1.2rem;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 1.2rem auto;
+}
+
+.container p {
+    margin: 1rem auto;
+    font-size: 0.8rem;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links button {
+    margin: 0 1rem;
+    padding: 0.5rem;
+    background: black;
+    border: none;
+}
+
+.links button a {
+    text-decoration: none;
+    color: white;
+}
