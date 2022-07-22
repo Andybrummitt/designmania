@@ -1,0 +1,15 @@
+.container {
+    padding: 1rem;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.container p {
+    font-size: 0.8rem;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 1.2rem auto;
+}

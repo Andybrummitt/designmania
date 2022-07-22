@@ -30,7 +30,7 @@ const WhatWeDo = () => {
         </div>
         <button className={styles.linkButton}>
         <a href="https://www.liquidid.co.uk/">
-            <span>Liquid Id</span>
+            <span>LIQUID id.</span>
         </a>
         </button>
       </article>
