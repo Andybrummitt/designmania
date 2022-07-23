@@ -5,11 +5,14 @@ import styles from "./WhatWeDo.module.css";
 
 const WhatWeDo = () => {
   return (
-    <section className={styles.container}>
-      <h1>What we do</h1>
+    <section className={styles.container} id="what-we-do">
+      <h1 className="page-title">What we do</h1>
+      <div className={styles.contentContainer}>
       <article>
         <h2>LIQUID id.</h2>
-        <Image src={liquidIdScreen} height={161} width={200} />
+        <div className={styles.imageWrapper}>
+          <Image src={liquidIdScreen} height={322} width={400} />
+        </div>
         <div>
           <p>
             LIQUID id. offers a fabulous range of Corporate Champagne, Wine,
@@ -36,7 +39,9 @@ const WhatWeDo = () => {
       </article>
       <article>
         <h2>Oculus Media</h2>
-        <Image src={oculusScreen} height={161} width={200} />
+        <div className={styles.imageWrapper}>
+          <Image src={oculusScreen} height={322} width={400} />
+        </div>
         <div>
           <p>
             Here at Oculus Media we asked ourselves why can't small businesses
@@ -55,8 +60,6 @@ const WhatWeDo = () => {
             Allowing small businesses to show off their services like the big
             dogs.
           </p>​​
-          <h3>LIMITED OFFER</h3>
-          <p>1-3 minute videos starting from £1075!</p>
         </div>
         <button className={styles.linkButton}>
           <a href="https://www.oculusmedia.co.uk/">
@@ -64,6 +67,7 @@ const WhatWeDo = () => {
           </a>
         </button>
       </article>
+      </div>
     </section>
   );
 };

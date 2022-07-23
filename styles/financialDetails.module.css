@@ -1,6 +1,28 @@
 .container {
-    padding: 5rem 1rem;
-    background: lightblue;
+    padding: 10rem 1rem;
+    background: url('../public/London-City-Photo-1.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 65vh;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contentContainer div {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.contentContainer h3 {
+    margin: 1rem auto;
 }
 
 .container p {
@@ -8,8 +30,15 @@
     line-height: 1.2rem;
 }
 
-.container h1 {
-    text-transform: uppercase;
-    font-size: 2rem;
-    margin: 1.2rem auto;
+@media screen and (min-width: 768px){
+    .contentContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .container p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
 }

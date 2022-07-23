@@ -1,27 +1,38 @@
 .container {
     width: 100%;
-    padding: 1rem;
     line-height: 1.2rem;
+    display: flex;
+    overflow: hidden;
 }
 
-.container h1 {
-    text-transform: uppercase;
-    font-size: 2rem;
-    margin: 1.2rem auto;
+.svgContainer {
+    background: url('../../public/camera.jpg');
+    background-repeat: no-repeat;
+    background-size: 300%;
+    background-position: 65% 28%;
+    flex: 1;
+}
+
+.textContainer {
+    flex: 1;
+    padding: 3rem;
 }
 
 .container p {
     margin: 1rem auto;
     font-size: 0.8rem;
+    width: 50%;
 }
 
 .links {
+    margin: 2rem 0;
     display: flex;
     justify-content: center;
 }
 
 .links button {
-    margin: 0 1rem;
+    font-size: 1.2rem;
+    margin: 0 1.5rem;
     padding: 0.5rem;
     background: black;
     border: none;
@@ -30,4 +41,13 @@
 .links button a {
     text-decoration: none;
     color: white;
+}
+
+@media screen and (min-width: 768px){
+    .container {
+        display: flex;
+    }
+    .container p {
+        font-size: 1rem;
+    }
 }
