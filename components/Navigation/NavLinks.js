@@ -1,10 +1,7 @@
 import Link from "next/link";
-import isHome from "../isHome";
 import styles from "./Navigation.module.css";
 
-const NavLinks = ({ isMobile, setNavLinksOpen }) => {
-  console.log(isHome());
-
+const NavLinks = ({ isMobile, setNavLinksOpen, navLinksOpen }) => {
   const handleMobileClick = () => {
     if (isMobile) {
       setNavLinksOpen(false);

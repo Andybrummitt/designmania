@@ -5,23 +5,14 @@
     overflow: hidden;
 }
 
-.svgContainer {
-    background: url('../../public/camera.jpg');
-    background-repeat: no-repeat;
-    background-size: 300%;
-    background-position: 65% 28%;
-    flex: 1;
-}
-
 .textContainer {
     flex: 1;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 .container p {
     margin: 1rem auto;
     font-size: 0.8rem;
-    width: 50%;
 }
 
 .links {
@@ -44,10 +35,18 @@
 }
 
 @media screen and (min-width: 768px){
-    .container {
-        display: flex;
-    }
     .container p {
         font-size: 1rem;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .svgContainer {
+        background: url('../../public/camera.jpg');
+        background-repeat: no-repeat;
+        background-size: 300%;
+        background-position: 65% 28%;
+        flex: 1;
     }
 }

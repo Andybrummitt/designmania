@@ -32,7 +32,11 @@ const MobileNavigation = () => {
       </Link>
       {navLinksOpen ? closeIcon : hamburgerIcon}
       {navLinksOpen ? (
-        <NavLinks isMobile={true} setNavLinksOpen={setNavLinksOpen} />
+        <NavLinks
+          isMobile={true}
+          setNavLinksOpen={setNavLinksOpen}
+          navLinksOpen={navLinksOpen}
+        />
       ) : null}
     </nav>
   );

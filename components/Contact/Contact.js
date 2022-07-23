@@ -17,7 +17,7 @@ const Contact = () => {
         </div>
         <div></div>
         <div>
-          <h3>Company Details:</h3>
+          <h3>Contact Details:</h3>
           <p>Tel (+44) 01371 829295</p>
           <br />
           <p>info@designmania.co.uk</p>
