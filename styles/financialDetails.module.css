@@ -16,6 +16,11 @@
     margin-right: auto;
 }
 
+.registrationNumbers {
+    text-align: center;
+    margin: 1rem auto;
+}
+
 .contentContainer div {
     text-align: center;
     margin: 1rem auto;
@@ -40,5 +45,10 @@
     .container p {
         font-size: 1rem;
         line-height: 1.5rem;
+    }
+
+    .registrationNumbers {
+        text-align: center;
+        margin: 2rem auto;
     }
 }

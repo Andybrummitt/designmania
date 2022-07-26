@@ -1,6 +1,7 @@
 .container {
     padding: 1rem;
     line-height: 1.2rem;
+    background: lightblue;
 }
 
 .contentContainer {
@@ -15,6 +16,16 @@
 
 .container p {
     font-size: 0.8rem;
+}
+
+.container p a {
+    text-decoration: none;
+    color: black;
+}
+
+.container p a:hover {
+    text-decoration: underline;
+    color: #0095b3;
 }
 
 .container h3 {

@@ -46,15 +46,26 @@
 
 .linkButton {
     margin: 1rem auto;
-    padding: 0.5rem;
     font-size: 1.2rem;
     background: black;
     border: none;
 }
 
 .linkButton a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: inline-block;  
+}
+
+.linkButton:hover {
+    background: lightblue;
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+.linkButton:hover a {
+    color: black;
 }
 
 @media screen and (min-width: 768px){

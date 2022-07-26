@@ -9,6 +9,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Design Mania Limited</title>
+        <meta name="description" content="Design Mania Limited is the parent company to both LIQUID id. and Musing Media (formerly Oculus Media). Find out more about our services." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>

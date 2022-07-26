@@ -4,8 +4,8 @@ import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../../public/Design-Mania-Logo.png";
+import MobileNavLinks from "./MobileNavLinks";
 import styles from "./Navigation.module.css";
-import NavLinks from "./NavLinks";
 
 const MobileNavigation = () => {
   const [navLinksOpen, setNavLinksOpen] = useState(false);
@@ -32,8 +32,7 @@ const MobileNavigation = () => {
       </Link>
       {navLinksOpen ? closeIcon : hamburgerIcon}
       {navLinksOpen ? (
-        <NavLinks
-          isMobile={true}
+        <MobileNavLinks
           setNavLinksOpen={setNavLinksOpen}
           navLinksOpen={navLinksOpen}
         />

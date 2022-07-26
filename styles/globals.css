@@ -23,6 +23,16 @@ html {
   margin: 2rem auto;
 }
 
+.not-found {
+   margin-top: 6rem;
+   text-align: center;
+   min-height: 70vh;
+}
+
+.not-found * {
+  margin: 2rem 0;
+}
+
 @media screen and (min-width: 768px){
   html {
     scroll-padding-top: 100px;

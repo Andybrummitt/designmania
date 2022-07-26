@@ -24,7 +24,6 @@
 .links button {
     font-size: 1.2rem;
     margin: 0 1.5rem;
-    padding: 0.5rem;
     background: black;
     border: none;
 }
@@ -32,6 +31,18 @@
 .links button a {
     text-decoration: none;
     color: white;
+    padding: 0.5rem;
+    display: inline-block;     
+}
+
+.links button:hover {
+    background: lightblue;
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+.links button:hover a {
+    color: black;
 }
 
 @media screen and (min-width: 768px){

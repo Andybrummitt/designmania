@@ -9,8 +9,6 @@
     background: white;
 }
 
-
-
 .navigation img {
     cursor: pointer;
 }
@@ -63,10 +61,6 @@
     align-items: center;
 }
 
-.mobileNavigation .navLinks li:not(:last-child){
-    border-bottom: 0.1rem solid grey;
-}
-
 .mobileNavigation .navLinks {
     text-align: center;
     width: 100%;
@@ -77,13 +71,26 @@
     cursor: pointer;
 }
 
+.open {
+    animation: openNav 0.5s;
+}
+
+@keyframes openNav {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
 /* -----------------------------   NAVIGATION HOVER  ----------------------- */
 
     .navLinks li a:after {
         content: "";
         position: absolute;
-        background-color: blue;
-        height: 0.1rem;
+        background-color: lightblue;
+        height: 0.15rem;
         width: 0;
         left: 0;
         bottom: 0;
@@ -123,7 +130,7 @@
     }
 
     .navLinks li a:hover {
-        color: blue;
+        font-weight: bold;
     }
 
     .navLinks li a:hover:after {

@@ -1,11 +1,14 @@
 import Link from "next/link";
 import styles from "./Navigation.module.css";
 
-const NavLinks = () => {
+const MobileNavLinks = ({ setNavLinksOpen, navLinksOpen }) => {
+  const handleMobileClick = () => {
+      setNavLinksOpen(false);
+  };
 
   return (
-    <div className={styles.navLinksContainer}>
-      <ul className={styles.navLinks}>
+    <div className={`${styles.navLinksContainer} ${navLinksOpen && styles.open}`}>
+      <ul className={styles.navLinks} onClick={handleMobileClick}>
         <li>
           <Link href="/#about-us">
             <a>About Us</a>
@@ -31,4 +34,4 @@ const NavLinks = () => {
   );
 };
 
-export default NavLinks;
+export default MobileNavLinks;
