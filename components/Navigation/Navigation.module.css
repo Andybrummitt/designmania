@@ -86,16 +86,26 @@
 
 /* -----------------------------   NAVIGATION HOVER  ----------------------- */
 
-    .navLinks li a:after {
-        content: "";
-        position: absolute;
-        background-color: lightblue;
-        height: 0.15rem;
-        width: 0;
-        left: 0;
-        bottom: 0;
-        transition: 0.3s;
+.navLinks li a:after {
+    content: "";
+    position: absolute;
+    background-color: lightblue;
+    height: 0.15rem;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+@media (hover: hover){
+    .navLinks li a:hover {
+        font-weight: bold;
     }
+
+    .navLinks li a:hover:after {
+        width: 100%;
+    }
+}
 
 
 @media screen and (min-width: 768px){
@@ -127,14 +137,6 @@
 
     .navLinks li {
         margin: 0 0.5rem;
-    }
-
-    .navLinks li a:hover {
-        font-weight: bold;
-    }
-
-    .navLinks li a:hover:after {
-        width: 100%;
     }
 
     .header {

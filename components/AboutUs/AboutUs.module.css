@@ -35,20 +35,26 @@
     display: inline-block;     
 }
 
-.links button:hover {
-    background: lightblue;
-    transition: 0.4s;
-    transform: scale(1.1);
-}
-
-.links button:hover a {
-    color: black;
+@media (hover: hover){
+    .links button:hover {
+        background: lightblue;
+        transition: 0.4s;
+        transform: scale(1.1);
+    }
+    
+    .links button:hover a {
+        color: black;
+    }
 }
 
 @media screen and (min-width: 768px){
     .container p {
         font-size: 1rem;
         width: 50%;
+    }
+
+    .links button:hover {
+
     }
 }
 
