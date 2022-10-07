@@ -7,5 +7,5 @@ This was a great experience building a website for a client as I had to communic
 
 The website is built with NextJS, React, JS and CSS modules.
 
-Link to website: https://designmania.vercel.app/
+Link to website: https://www.designmania.co.uk/
 
